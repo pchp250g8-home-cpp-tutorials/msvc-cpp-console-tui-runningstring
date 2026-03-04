@@ -1,5 +1,21 @@
 RunningString. C++ Tutorials. Microsoft Visual Studio IDE. Strings. Console Application. Advanced Features. PDCurses Library. 
 The program does the following:
+  1. Loads the PDCurses library.
+  2. Creates a standard terminal size window (80 columns, 25 rows).
+  3. Clears the created window.
+  4. Creates the first string variable consisting of 80 spaces.
+  5. Creates a second string variable with the value "Hello World!!! Running String!!! Press Any Key To Exit!!!".
+  6. The second line is added to the first line twice. The result is a line with 80 spaces to the left and right of the text.
+  7. Determines the length of the second line (the number of characters per line). The number 80 (the length of the first line) is subtracted from this length.
+  8. Creates a variable for the character number of the string from which to extract a substring of 80 characters.
+  9. This variable will be a counter that will change from 0 to the length of the second string variable.
+  10. A loop with a postcondition is executed.
+      10.1. The first string variable is replaced with a substring of length 80 characters from the second string variable, starting with the character number                 with the counter value.
+      10.2. The first string variable is displayed on the screen at position 1 column 1 row.
+      10.3. The program pauses for 140 milliseconds.
+      10.4. The counter variable is incremented by 1. If its value is greater than the length of the second string, it is set to 0.
+      10.5. The loop condition is checked to see if any key is pressed. If not, the loop continues and terminates otherwise.
+  11. Unloads the PDCurses library and exits.
 
 RunningString. Занятия по C++. ИС Microsoft Visual Studio. Строки. Консольное приложение. Расширенные возможности. Библиотека PDCurses. 
 Программа делает следующее:
